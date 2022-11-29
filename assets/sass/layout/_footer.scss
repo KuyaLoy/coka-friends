@@ -1,0 +1,9 @@
+@use '../utils' as u;
+
+footer {
+    text-align: center;
+    color: var(--grey);
+    font-size: u.rem(25);
+    margin: u.rem(25) 0;
+    font-family: "Helvetica-bold";
+}
