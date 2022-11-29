@@ -386,7 +386,7 @@ main#profile {
         background-color: hsla(0, 0%, 36%, 0.70);
         top: 0;
 
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         padding: 15px;
@@ -395,7 +395,7 @@ main#profile {
             max-width: u.rem(1440);
             width: 100%;
             max-height: 800px;
-            background-color: green;
+            background-color: var(--background);
 
             display: flex;
             align-items: center;
@@ -445,6 +445,127 @@ main#profile {
                         }
                     }
                 }
+
+                .comment-list {
+                    padding: 15px 30px;
+                    color: var(--background);
+                    overflow: scroll;
+                    min-height: 600px;
+                    max-height: 600px;
+
+                    .comment-item {
+                        display: grid;
+                        grid-template-columns: 60px auto 27px;
+                        grid-template-rows: 1fr;
+                        grid-column-gap: 12px;
+                        grid-row-gap: 0px;
+                        margin-bottom: 30px;
+
+                        img.comment-profile {
+                            width: 60px;
+                            height: 60px;
+                            object-fit: cover;
+                            border-radius: 100%;
+                        }
+
+                        .comment-wrapper-item {
+                            margin-top: 15px;
+
+                            .username {
+                                font-size: 30px;
+                                font-family: "Helvetica-medium";
+                                
+                                .mini-comment {
+                                    font-family: "Helvetica-light";
+                                    margin-left: 20px;
+                                }
+                            }
+
+                            .comment-text {
+                                display: block;
+                                margin-top: 22px;
+                                font-family: "Helvetica-light";
+                                font-size: 20px;
+                                line-height: 25px;
+                            }
+                        }
+                    }
+                }
+
+                .actions {
+                    border-top: #B5B5B5 1px solid;
+                    border-bottom: #B5B5B5 1px solid;
+                    padding: 7.5px 30px;
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        display: inline-block;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        cursor: pointer;
+                        margin-right: 10px;
+                        background-position: center;
+                        height: 24px;
+                        width: 24px;
+                        
+                        &.like {
+                            background-image: url(../image/profile/heart-button-line.svg);
+                        }
+                        &.comment {
+                            background-image: url(../image/profile/comment-button-line.png);
+                        }
+                        &.share {
+                            background-image: url(../image/profile/share-button-line.svg);
+                        }
+                    }
+                }
+
+                .message-sent {
+                    padding: 7.5px 30px;
+                    display: grid;
+                    grid-template-columns: 30px auto 80px;
+                    grid-template-rows: 1fr;
+                    grid-column-gap: 12px;
+                    grid-row-gap: 0px;
+                    align-items: center;
+
+                    .emoticons {
+                        background-position: center;
+                        height: 30px;
+                        border: unset;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-image: url(../image/profile/emoticons.svg);
+                        cursor: pointer;
+                    }
+                    .input-message {
+                        height: 30px;
+                        border: none;
+                        font-family: "Helvetica-light";
+                        font-size: 20px;
+                        outline: none;
+
+                        &::placeholder {
+                            color: #AEAEAE;
+                        }
+                    }
+                    .send {
+                        color: hsla(210, 72%, 58%, 0.39);
+                        font-family: "Helvetica-bold";
+                        background: none;
+                        border: none;
+                        font-size: 22px;
+                        pointer-events: none;
+
+                        &.active {
+                            color: hsl(210, 72%, 58%);
+                            cursor: pointer;
+                            pointer-events: unset;
+                        }
+                    }
+                }
+
             }
         }
     }
