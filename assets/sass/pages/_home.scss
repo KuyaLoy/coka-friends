@@ -18,18 +18,27 @@ body {
             font-size: u.rem(50);
             line-height: u.rem(62);
             font-family: "Helvetica-bold-italic-oblique";
+            margin-bottom: u.rem(58);
+            @media (max-width: u.rem(1024)) {
+                margin-bottom: u.rem(0);
+            }
         }
 
         .profile-wrapper {
-            margin-top: u.rem(58);
-
-            @media (max-width: u.rem(1024)) {
-                margin-top: u.rem(0);
-            }
+            max-width: u.rem(1920);
+            margin: 0 auto;
+            //align-self: center;
+            width: 100%;
             
             display: flex;
 
             padding: 0 u.rem(100);
+
+
+            @media (max-width: u.rem(1440)) {
+                padding: 0 u.rem(50);
+            }
+
             @media (max-width: u.rem(1024)) {
                 padding: 0 0rem;
                 margin: 0 auto;
@@ -88,6 +97,7 @@ body {
             .profile-banner {
                 transition: ease-out .75s;
                 flex-basis: 80%;
+                width: 100%;
 
                 height: u.rem(300);
                 
@@ -221,10 +231,18 @@ body {
                 transition: ease 1s;
 
                 .navigation-content {
-                    width: u.rem(244);
+                    width: u.rem(300);
                     margin: u.rem(37.5);
                     box-shadow: 0px 3px 6px #808080;
                     border: 6px solid #000000;
+
+                    @media (max-width: u.rem(1440)) {
+                        width: u.rem(280);
+                    }
+
+                    @media (max-width: u.rem(1200)) {
+                        width: u.rem(200);
+                    }
 
                     cursor: pointer;
 

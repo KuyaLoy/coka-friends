@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.862" y1="0.177" x2="0.081" y2="0.764" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#19a7f8"/>
+      <stop offset="1" stop-color="#a4dbf9"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_23" data-name="Group 23" transform="translate(-104 -658)">
+    <circle id="Ellipse_20" data-name="Ellipse 20" cx="18" cy="18" r="18" transform="translate(104 658)" fill="url(#linear-gradient)"/>
+    <path id="Icon_awesome-camera" data-name="Icon awesome-camera" d="M19.97,7.494V18.727A1.873,1.873,0,0,1,18.1,20.6H1.872A1.873,1.873,0,0,1,0,18.727V7.494A1.873,1.873,0,0,1,1.872,5.621H5.3l.48-1.283A1.87,1.87,0,0,1,7.536,3.125h4.9a1.87,1.87,0,0,1,1.751,1.213l.484,1.283H18.1A1.873,1.873,0,0,1,19.97,7.494Zm-5.3,5.617a4.681,4.681,0,1,0-4.681,4.681A4.684,4.684,0,0,0,14.666,13.11Zm-1.248,0A3.432,3.432,0,1,1,9.985,9.678,3.437,3.437,0,0,1,13.418,13.11Z" transform="translate(112.015 663.875)" fill="#fff"/>
+  </g>
+</svg>
