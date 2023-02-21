@@ -12,7 +12,6 @@ $(".web .navigation-content:nth-child(2)").hover(
     $(".banner-hover-2").css("display", "none");
   }
 );
-
 $(".web .navigation-content.cs").hover(
   function () {
     $(".profile-banner").addClass("hover");
@@ -24,6 +23,20 @@ $(".web .navigation-content.cs").hover(
     $(".profile-banner").removeClass("hover");
     $(".profile-banner img.banner-image").show();
     $(".banner-hover-3").css("display", "none");
+  }
+);
+
+$(".web .navigation-content.dnft").hover(
+  function () {
+    $(".profile-banner").addClass("hover");
+    $(".profile-banner img.banner-image").hide();
+
+    $(".banner-hover-1").css("display", "flex");
+  },
+  function () {
+    $(".profile-banner").removeClass("hover");
+    $(".profile-banner img.banner-image").show();
+    $(".banner-hover-1").css("display", "none");
   }
 );
 

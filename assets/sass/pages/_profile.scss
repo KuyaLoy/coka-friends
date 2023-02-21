@@ -238,9 +238,9 @@ main#profile {
 
                                             &:not(:first-child) {
 
-                                                img {
-                                                    border: 1px solid #000;
-                                                }
+                                                // img {
+                                                //     border: 1px solid #000;
+                                                // }
                                                 .name {
                                                     color: #C0BCBC;
                                                 }
@@ -254,9 +254,10 @@ main#profile {
                                             img {
                                                 height: 90px;
                                                 width: auto;
-                                                object-fit: contain;
+                                                object-fit: scale-down;
                                                 background: white;
                                                 border-radius: 100%;
+                                                border: 1px solid #000;
                                             }
 
                                             .name {

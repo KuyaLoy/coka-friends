@@ -14,6 +14,10 @@ body {
         flex-wrap: wrap;
         text-align: center;
 
+        @media(max-width: 1023px) {
+            margin-bottom: -75px;
+        }
+
         h1 {
             font-size: u.rem(50);
             line-height: u.rem(62);
@@ -42,6 +46,9 @@ body {
             @media (max-width: u.rem(1024)) {
                 padding: 0 0rem;
                 margin: 0 auto;
+            }
+            @media (max-width: u.rem(1023)) {
+                width: unset;
             }
 
             .profile-mini-info {
@@ -126,6 +133,49 @@ body {
                     flex-basis: 80%;
                     transition: ease-out 2s;
 
+                    .banner-hover-1 {
+                        position: absolute;
+                        display: none;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: u.rem(-100);
+                        margin-left: u.rem(-75);
+
+                        .desc {
+                            .ig-name {
+                                display: flex;
+                                align-items: center;
+    
+                                img.min-logo {
+                                    width: u.rem(200) !important;
+                                    margin-right: u.rem(24);
+                                }
+                                // img.text-logo {
+                                //     //background-color: red;
+                                // }
+                                p.ig {
+                                    font-size: u.rem(62);
+                                    line-height: u.rem(43);
+                                    letter-spacing: u.rem(-1.24);
+                                    font-family: "Helvetica-medium-italic-oblique";
+                                }
+                            }
+                            p.counts {
+                                font-size: u.rem(40);
+                                line-height: u.rem(43);
+                                letter-spacing: u.rem(-0.8);
+                                font-family: "Helvetica-Bold";
+                                margin-top: u.rem(30);
+                            }
+                        }
+                        .img-coka {
+                            margin-top: u.rem(-75);
+                            margin-left: u.rem(-25);
+                            z-index: -1;
+                            width: u.rem(500);
+                        }
+
+                    }
                     .banner-hover-2 {
                         position: absolute;
                         display: none;
@@ -280,6 +330,21 @@ body {
                     justify-content: center;
                     width: 90%;
                     border-radius: 50px;
+
+                    &.domino {
+                        font-size: u.rem(20);
+                        font-family: "Helvetica-bold-italic-oblique";
+                        line-height: u.rem(40);
+                        &:hover {
+                            background-color: var(--background);
+                            color: var(--textColor);
+                            border: var(--textColor) 3px solid;
+                            //background-image: url(../image/home/domino-logo-big.png);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                        }
+                    }
 
                     &.insta {
                         font-size: u.rem(20);
